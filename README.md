@@ -1,2 +1,2 @@
 # Cloud-Resume
-Resume Site with Cloud porjects and certification
+Resume Site with Cloud projects and certification
