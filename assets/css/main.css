@@ -30,8 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
-	background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-  color: #ffffff;;
+	line-height: 1;
 }
 
 ol, ul {
@@ -1660,3 +1659,14 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		.badge-row {
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		  }
+		  .badge-row img {
+			width: 100px;
+			height: auto;
+			border-radius: 8px;
+		  }
