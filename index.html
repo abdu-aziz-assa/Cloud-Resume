@@ -5,13 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdu-Aziz Assa - Cloud Resume</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    section {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .portfolio-section {
+      display: none;
+      margin-top: 20px;
+      animation: scaleIn 0.5s ease-in-out;
+    }
+    @keyframes scaleIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .project-card {
+      background: #1e1e2f;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px auto;
+      max-width: 700px;
+      text-align: left;
+    }
+    .project-card a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Abdu-Aziz Assa</h1>
-    <p>Cloud & Cybersecurity Engineer</p>
+    <video autoplay muted loop style="width:100%; max-height:300px; object-fit:cover;">
+      <source src="assets/videos/cyber-animation.mp4" type="video/mp4">
+    </video>
+    <h1 style="font-size: 2.5rem; margin: 0; text-align: center;">Abdu-Aziz Assa</h1>
+    <p style="font-size: 1.25rem; text-align: center;">Cloud & Cybersecurity Engineer</p>
   </header>
-  <section>
+  <section id="about" class="slide-in" style="text-align: center;">
     <h2>About Me</h2>
     <p>I’m a Systems Integration & Test Engineer with an active Secret Government Clearance, currently transitioning into cloud security and solutions architecture. With hands-on experience automating deployments using Python, Bash, and CI/CD pipelines, I’ve contributed to mission-critical aerospace systems while also building a solid foundation in cloud technologies through AWS projects and my cybersecurity master’s program at Kennesaw State University.
 
@@ -41,36 +82,45 @@
       </div>
       <div class="experience-item">
         <img src="assets/images/self-taught.png" alt="Self-Taught Logo" class="company-logo" style="width:80px; height:80px; object-fit:contain;"">
-        <p><strong>Self-Learning Portfolio</strong> – AWS Projects & Labs</p>
+        <p><strong>Self-Learning</strong> – AWS Projects & Labs</p>
       </div>
     </div>
   </section>
-  <section>
+  <section id="portfolio" class="slide-in">
     <h2>Portfolio Projects</h2>
-    <ul>
-      <li>
+    <button onclick="togglePortfolio()" id="portfolio-toggle">View Projects ▼</button>
+    <div class="portfolio-section" id="portfolio-container">
+      <div class="project-card">
         <strong>AWS Security IAM</strong>: Built with AWS IAM, AWS Cloudwatch, AWS EC2, and JSON for IAM Policies . <br>
-        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-security-iam/document.pdf">View on GitHub</a>
+        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-security-iam/document.pdf">View</a>
       </li>
       <li>
         <strong>AWS Virtual Private CLoud (VPC) </strong>: Built an Amazon VPC with a public sunbet and internet gateway. <br>
-        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-networks-vpc/document.pdf">View on GitHub</a>
+        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-networks-vpc/document.pdf">View</a>
       </li>
       <li>
         <strong>Fetch Data with AWS Lambda</strong>: Built using Lambda, DynamoDB, and Amazon API Gateway. <br>
-        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-compute-lambda/document.pdf">View on GitHub</a>
+        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-compute-lambda/document.pdf">View</a>
       </li>
     <li> 
         <strong>Threat Detection with Amazon GuardDuty</strong>: Built using GuardDuty, Cloudfront, S3, Cloudformation, OWASP Juice Shop. <br>
-        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-security-guardduty/document.pdf">View on Github</a>
+        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-security-guardduty/document.pdf">View</a>
 </li>
 <li> 
     <strong>VPC Traffic Flow and Security</strong>: Built using Amazon VPC. <br>
-    <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-networks-security/document.pdf">View on Github</a>
+    <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-networks-security/document.pdf">View</a>
 </li>
 <li> 
     <strong>Host a Website on Amazon S3</strong>: Built using Amazon S3. <br>
-    <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-host-a-website-on-s3/document.pdf">View on Github</a>
+    <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-host-a-website-on-s3/document.pdf">View</a>
+    </li>
+    <li>
+    <strong> AWS Analytics with Quicksight</strong>: Built using Amazon Quicksight and S3. <br>
+    <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-analytics-quicksight/document.pdf ">View</a>
+  </li>
+  <li>
+  <strong>Interactive Cloud Resume</strong>: Built using Azure, Terraform, and Github Actions. <br>
+  <a href="Cloud-Resume Project.md">View</a>
     </ul>
   </section>
   <section>
@@ -90,5 +140,25 @@
     </li>
     </ul>
   </section>
+  <script>
+    function togglePortfolio() {
+      const container = document.getElementById('portfolio-container');
+      const toggle = document.getElementById('portfolio-toggle');
+      const isVisible = container.style.display === 'block';
+      container.style.display = isVisible ? 'none' : 'block';
+      toggle.innerHTML = isVisible ? 'View Projects ▼' : 'Hide Projects ▲';
+    }
+    window.addEventListener('scroll', () => {
+    const slideSections = document.querySelectorAll('.slide-in');
+    const triggerBottom = window.innerHeight * 0.85;
+
+    slideSections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < triggerBottom) {
+        section.classList.add('visible');
+      }
+    });
+  });
+  </script>
 </body>
 </html>
