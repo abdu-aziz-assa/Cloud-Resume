@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdu-Aziz Assa - Cloud Resume</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a192f;
+      color: #ccd6f6;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header video {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .profile-photo {
+      width: 140px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: #64ffda;
+      text-decoration: none;
+    }
+    .certs img {
+      width: 100px;
+      margin: 10px;
+    }
+    .light-bg {
+  background-color: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <video autoplay muted loop style="width:100%; max-height:300px; object-fit:cover;">
+      <source src="assets/videos/cyber-animation.mp4" type="video/mp4">
+    </video>
+    <h1 style="font-size: 2.5rem; margin: 0; text-align: center;">Abdu-Aziz Assa</h1>
+    <p style="font-size: 1.25rem; text-align: center;">Cloud & Cybersecurity Engineer</p>
+  </header>
+   <!-- Social Icons -->
+   <section id="social-icons" class="slide-in">
+    <a href="https://github.com/abdu-aziz-assa" target="_blank">🐱 GitHub</a>
+    <a href="https://linkedin.com/in/abdu-aziz-assa" target="_blank">🔗 LinkedIn</a>
+    <a href="https://instagram.com/abdu_aziz1" target="_blank">📷 Instagram</a>
+  </section>
+  <section id="about" class="slide-in" style="text-align: center;">
+    <h2>About Me</h2>
+    <p>I’m a Systems Integration & Test Engineer with an active Secret Government Clearance, currently transitioning into cloud security and solutions architecture. With hands-on experience automating deployments using Python, Bash, and CI/CD pipelines, I’ve contributed to mission-critical aerospace systems while also building a solid foundation in cloud technologies through AWS projects and my cybersecurity master’s program at Kennesaw State University.
+
+        I’m certified in CompTIA Security+, ISC2 CC, and AWS Certified Cloud Practitioner, with the AWS Solutions Architect Associate certification in progress. My technical portfolio showcases real-world projects in IAM, serverless architectures, infrastructure-as-code, and DevSecOps workflows. I’ve also gained practical experience with tools like Wireshark, Autopsy, GitLab, and PowerShell through labs and self-directed learning.
+    
+        Driven by a passion for innovation and secure design, I’m seeking to grow as a Cloud Engineer or Cloud Solutions Architect, leveraging both my engineering background and cybersecurity education to solve complex problems at scale.</p>
+  </section>
+
+  <!-- Profile Photo and Contact -->
+<section id="profile" class="slide-in" style="text-align:center;">
+    <img src="assets/images/Linkedin Photo.jpg" alt="Your Name" style="width:150px; border-radius:50%; margin-bottom:15px;">
+    <h2>Abdu-Aziz Assa</h2>
+    <p>Email: abduassa86@gmail.com</p>
+  </section>
+  <!-- Work Experience Section -->
+  <section id="experience" class="slide-in" style="text-align:center;">
+    <h2>Work Experience</h2>
+    <div class="experience-list">
+      <div class="experience-item">
+        <img src="assets/images/lockheed logo.jpg" alt="Lockheed Martin Logo" class="company-logo" style="width:80px; height:80px; object-fit:contain;"">
+        <p><strong>Lockheed Martin</strong> – Systems Integration & Test Engineer</p>
+      </div>
+      <div class="experience-item">
+        <img src="assets/images/Siemens.png" alt="Siemens Logo" class="company-logo" style="width:80px; height:80px; object-fit:contain;"">
+        <p><strong>Siemens</strong> – OLDP Intern (Software Rotation)</p>
+      </div>
+      <div class="experience-item">
+        <img src="assets/images/self-taught.png" alt="Self-Taught Logo" class="company-logo" style="width:80px; height:80px; object-fit:contain;"">
+        <p><strong>Self-Learning</strong> – AWS Projects & Labs</p>
+      </div>
+    </div>
+  </section>
+    <section id="portfolio" class="slide-in">
+      <h2>Portfolio Projects</h2>
+      <button onclick="togglePortfolio()">View Projects</button>
+      <div id="portfolio-container" style="display:none;">
+      <div class="project-card">
+        <strong>AWS Security IAM</strong>: Built with AWS IAM, AWS Cloudwatch, AWS EC2, and JSON for IAM Policies . <br>
+        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-security-iam/document.pdf">View</a>
+      </li>
+      <li>
+        <strong>AWS Virtual Private CLoud (VPC) </strong>: Built an Amazon VPC with a public sunbet and internet gateway. <br>
+        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-networks-vpc/document.pdf">View</a>
+      </li>
+      <li>
+        <strong>Fetch Data with AWS Lambda</strong>: Built using Lambda, DynamoDB, and Amazon API Gateway. <br>
+        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-compute-lambda/document.pdf">View</a>
+      </li>
+    <li> 
+        <strong>Threat Detection with Amazon GuardDuty</strong>: Built using GuardDuty, Cloudfront, S3, Cloudformation, OWASP Juice Shop. <br>
+        <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-security-guardduty/document.pdf">View</a>
+</li>
+<li> 
+    <strong>VPC Traffic Flow and Security</strong>: Built using Amazon VPC. <br>
+    <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-networks-security/document.pdf">View</a>
+</li>
+<li> 
+    <strong>Host a Website on Amazon S3</strong>: Built using Amazon S3. <br>
+    <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-host-a-website-on-s3/document.pdf">View</a>
+    </li>
+    <li>
+    <strong> AWS Analytics with Quicksight</strong>: Built using Amazon Quicksight and S3. <br>
+    <a href="https://docs.google.com/viewer?url=https://learn.nextwork.org/soothed_silver_joyful_cuca/projects/aws-analytics-quicksight/document.pdf ">View</a>
+  </li>
+  <li>
+  <strong>Interactive Cloud Resume</strong>: Built using Azure, Terraform, and Github Actions. <br>
+  <a href="Cloud-Resume Project.md">View</a>
+    </ul>
+  </section>
+  <section id="badges-row" class="slide-in">
+    <h2>Certifications</h2>
+    <div class="cert-list">
+            <img src="https://images.credly.com/size/110x110/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS CLoud Practitioner" width="100">
+        <img src="https://images.credly.com/size/340x340/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob" alt:"CompTIA Security+" width="100">
+      <img src="https://images.credly.com/size/340x340/images/2030e43f-8003-4d4b-9630-847add403c87/image.png" alt="ISC2 Certified in Cybersecurity" class="cert-img light-bg" width="100">
+    </div>
+  </section>
+  <script>
+    function togglePortfolio() {
+      const container = document.getElementById('portfolio-container');
+      const toggle = document.getElementById('portfolio-toggle');
+      const isVisible = container.style.display === 'block';
+      container.style.display = isVisible ? 'none' : 'block';
+      toggle.innerHTML = isVisible ? 'View Projects ▼' : 'Hide Projects ▲';
+    }
+    window.addEventListener('scroll', () => {
+    const slideSections = document.querySelectorAll('.slide-in');
+    const triggerBottom = window.innerHeight * 0.85;
+
+    slideSections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < triggerBottom) {
+        section.classList.add('visible');
+      }
+    });
+  });
+  </script>
+</body>
+</html>
